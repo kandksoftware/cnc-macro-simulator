@@ -1,141 +1,21 @@
+# Don't redirect assets - keep them accessible on old domain
 [[redirects]]
-  from = "/css/main.css/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/css/main.css"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/purchase/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/index.html?goto=purchase"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/demo-request/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/demo.html"
+  from = "/css/*"
+  to = "/css/:splat"
   status = 200
 
 [[redirects]]
-  from = "/contact/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/contact.html"
+  from = "/js/*"
+  to = "/js/:splat"
   status = 200
 
 [[redirects]]
-  from = "/js/main.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/main.js"
+  from = "/resources/*"
+  to = "/resources/:splat"
   status = 200
-  force = true
 
+# But redirect HTML pages to new domain
 [[redirects]]
-  from = "/js/script-loader.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/script-loader.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/global.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/global.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/build.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/build.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/config.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/config.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/gallery.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/gallery.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/feedback.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/feedback.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/goto.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/goto.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/hero.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/hero.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/highlighter.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/highlighter.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/iframe.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/iframe.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/lang.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/lang.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/main2.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/main2.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/menu.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/menu.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/modal.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/modal.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/price-controller.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/price-controller.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/purchase.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/purchase.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/replacer.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/replacer.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/template-injector.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/template-injector.js"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/js/utils.js/*"
-  to = "https://kandksoftware.github.io/macro-terminal-pro/js/utils.js"
-  status = 200
-  force = true
+  from = "/*.html"
+  to = "https://cncmacrosimulator.com/:splat"
+  status = 301
