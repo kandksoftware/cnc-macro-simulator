@@ -1,12 +1,57 @@
-# netlify.toml - Version: 2024.01.15-01
-# Force update by changing this comment date
+# netlify.toml - COMPLETE OVERRIDE CONFIGURATION
+# Last updated: $(date)
 
 [build]
   publish = "public"
-  command = "echo 'No build command'"
+  command = """
+    echo "Forcing netlify.toml configuration update..."
+    echo "Build started at: $(date)"
+    echo "Configuration version: override-$(date +%s)"
+    """
 
-# Catch-all - serve the actual HTML files
+# DISABLE ALL EXTERNAL REDIRECTS
+# Serve all content locally from HTML files
+
+[[redirects]]
+  from = "/purchase"
+  to = "/purchase/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/demo-request"
+  to = "/products/index.html"
+  status = 200
+  force = true
+
+# Explicitly block external URLs with force
+[[redirects]]
+  from = "/purchase"
+  to = "/purchase/index.html"
+  status = 200!
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact/index.html"
+  status = 200!
+  force = true
+
+[[redirects]]
+  from = "/demo-request"
+  to = "/contact/index.html"
+  status = 200!
+  force = true
+
+# Final catch-all - serve index.html for everything else
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
