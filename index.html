@@ -4,36 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="resources/icon.png" type="image/png" />
-  <link rel="stylesheet" href="css/main.css">
   <title>
-    CNC Macro Simulator II - best cnc macro software
+    CNC Macro Simulator II - redirect
   </title>
   <meta name="description" content="CNC Macro Simulator II - under construction" />
   <meta name="keywords" content="" />
   <meta name="robots" content="index, follow">
-  <meta http-equiv="Refresh" content="0; url='https://kandksoftware.github.io/macro-terminal-pro/'" />
 
 </head>
 
 <body>
-  <noscript>Your browser does not support JavaScript!</noscript>
-  <div id="splash-screen">
-    <img src="resources/spinner.gif" alt="spinner" />
-  </div>
-  <div id="app" class="hide">
-    <header>
-      {{ header }}
-    </header>
-    <main>
+  <script>
+    const defaultUrl = 'https://kandksoftware.github.io/macro-terminal-pro'
+    const redirectMap = {
+      '/purchase': 'https://kandksoftware.github.io/macro-terminal-pro/index.html?goto=purchase',
+      '/demo-request': 'https://kandksoftware.github.io/macro-terminal-pro/demo.html',
+      '/contact': 'https://kandksoftware.github.io/macro-terminal-pro/contact.html',
+    };
 
-    </main>
-    <footer class="footer">
-      {{ footer }}
-    </footer>
-    <script src="js/script-loader.js"></script>
-    <script src="js/main.js"></script>
-  </div>
+    const currentPath = window.location.pathname;
+
+    if (redirectMap[currentPath]) {
+      window.location.href = redirectMap[currentPath]
+    } else {
+      window.location.href = defaultUrl
+    }
+
+  </script>
 </body>
 
 </html>
