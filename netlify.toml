@@ -1,21 +1,5 @@
-# Don't redirect assets - keep them accessible on old domain
+# NEW site under construction, temporary redirect to OLD site
 [[redirects]]
-  from = "/css/*"
-  to = "/css/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/js/*"
-  to = "/js/:splat"
-  status = 200
-
-[[redirects]]
-  from = "/resources/*"
-  to = "/resources/:splat"
-  status = 200
-
-# But redirect HTML pages to new domain
-[[redirects]]
-  from = "/*.html"
-  to = "https://cncmacrosimulator.com/:splat"
-  status = 301
+  from = "/*"
+  to = "https://kandksoftware.github.io/macro-terminal-pro/:splat"
+  status = 302  # Temporary, not 301
