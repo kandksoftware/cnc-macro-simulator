@@ -1,37 +1,9 @@
-build]
+# netlify.toml - Version: 2024.01.15-01
+# Force update by changing this comment date
+
+[build]
   publish = "public"
   command = "echo 'No build command'"
-
-# Explicitly empty redirects section
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
-# Override any previous redirects by making them do nothing
-[[redirects]]
-  from = "/about"
-  to = "/about/index.html"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/contact"
-  to = "/contact/index.html"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/products"
-  to = "/products/index.html"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/services"
-  to = "/services/index.html"
-  status = 200
-  force = true
 
 # Catch-all - serve the actual HTML files
 [[redirects]]
