@@ -57,6 +57,12 @@
   force = true
 
 [[redirects]]
+  from = "/js/feedback.js/*"
+  to = "https://kandksoftware.github.io/macro-terminal-pro/js/feedback.js"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/js/goto.js/*"
   to = "https://kandksoftware.github.io/macro-terminal-pro/js/goto.js"
   status = 200
