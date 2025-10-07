@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/css/*"
+  from = "/css/main.css/*"
   to = "https://kandksoftware.github.io/macro-terminal-pro/css/main.css"
   status = 200
   force = true
@@ -18,4 +18,16 @@
 [[redirects]]
   from = "/contact/*"
   to = "https://kandksoftware.github.io/macro-terminal-pro/contact.html"
-  status = 200  
+  status = 200
+
+[[redirects]]
+  from = "/js/main.js/*"
+  to = "https://kandksoftware.github.io/macro-terminal-pro/js/main.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/js/script-loader.js/*"
+  to = "https://kandksoftware.github.io/macro-terminal-pro/js/script-loader.js"
+  status = 200
+  force = true
