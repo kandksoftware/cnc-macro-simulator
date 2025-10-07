@@ -11,7 +11,7 @@
   force = true
 
 [[redirects]]
-  from = "/request-demo/*"
+  from = "/demo-request/*"
   to = "https://kandksoftware.github.io/macro-terminal-pro/demo.html"
   status = 200
 
