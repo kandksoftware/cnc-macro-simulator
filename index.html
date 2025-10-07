@@ -9,7 +9,7 @@
   </title>
   <meta name="description" content="CNC Macro Simulator II - under construction" />
   <meta name="keywords" content="" />
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="noindex, nofollow">
 
 </head>
 
@@ -24,19 +24,11 @@
 
     const currentPath = window.location.pathname;
 
-
-    setTimeout(() => {
-      alert('Redirect ...')
-      if (redirectMap[currentPath]) {
-        window.location.href = redirectMap[currentPath]
-      } else {
-        window.location.href = defaultUrl
-      }
-    }, 3000)
-
-
-
-
+    if (redirectMap[currentPath]) {
+      window.location.href = redirectMap[currentPath]
+    } else {
+      window.location.href = defaultUrl
+    }
 
   </script>
 </body>
