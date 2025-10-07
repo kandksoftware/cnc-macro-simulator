@@ -24,11 +24,15 @@
 
     const currentPath = window.location.pathname;
 
+
     if (redirectMap[currentPath]) {
       window.location.href = redirectMap[currentPath]
     } else {
       window.location.href = defaultUrl
     }
+
+
+
 
   </script>
 </body>

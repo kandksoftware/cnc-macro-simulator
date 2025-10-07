@@ -1,3 +1,21 @@
-[build]
-  publish = "public"
-  command = "echo 'No build command'"
+[[redirects]]
+  from = "/css/*"
+  to = "https://kandksoftware.github.io/macro-terminal-pro/css"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/purchase/*"
+  to = "https://kandksoftware.github.io/macro-terminal-pro/index.html?goto=purchase"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/request-demo/*"
+  to = "https://kandksoftware.github.io/macro-terminal-pro/demo.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact/*"
+  to = "https://kandksoftware.github.io/macro-terminal-pro/contact.html"
+  status = 200  
