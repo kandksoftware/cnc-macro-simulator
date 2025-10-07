@@ -1,4 +1,9 @@
 [[redirects]]
+  from = "/css/*"
+  to = "https://kandksoftware.github.io/macro-terminal-pro/css"
+  status = 200
+  force = true
+
   from = "/purchase/*"
   to = "https://kandksoftware.github.io/macro-terminal-pro/index.html?goto=purchase"
   status = 200
